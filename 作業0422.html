@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>劉晶雯 Story - 桃園市行政區人口統計</title>
+    <title>桃園市村里人口</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .text-container {
+            padding: 20px;
+            background-color: #ffffff;
+            border-bottom: 2px solid #ddd;
+            text-align: center;
+        }
+
+        .iframe-container {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <iframe src="https://plotdb.io/v/chart/37218" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
+    <div class="text-container">
+        <h1>桃園人口</h1>
+    </div>
+    <div class="iframe-container">
+        <iframe src="https://plotdb.io/v/chart/37218" allowfullscreen="true"></iframe>
+    </div>
 </body>
 </html>
