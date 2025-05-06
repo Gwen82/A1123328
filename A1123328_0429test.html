@@ -48,6 +48,35 @@
             height: 600px;
             border: none;
         }
+
+        /* Styling for the newly added box */
+        .info-box {
+            display: flex;
+            border: 2px solid #ccc; /* Box border */
+            border-radius: 5px;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9; /* Light gray background */
+        }
+
+        .info-box .text-side {
+            flex: 1; /* Text box on the left side */
+            padding-right: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .info-box .image-side {
+            flex: 1; /* Image box on the right side */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info-box .image-side img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -66,6 +95,19 @@
         <div class="container">
             <h2>80-100嵗</h2>
             <iframe src="https://plotdb.io/v/chart/37474" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- Newly Added Box Below -->
+    <div class="info-box">
+        <!-- Text on the left side -->
+        <div class="text-side">
+            隨著高齡化社會的發展，高齡友善城市的建設應涵蓋健康、社交與生活品質等面向。我家鄉的數據顯示，許多高齡者面臨營養不均、孤獨感與社交機會減少的挑戰，因此我提出「銀齡樂廚」計畫，結合音樂與共煮共食，提升高齡者的身心健康，打造健康、快樂且充滿歸屬感的晚年生活。計畫將邀請營養師設計高齡友善菜單，確保長者獲得均衡飲食，並在烹飪與用餐過程中播放懷舊音樂，以喚起回憶、減輕焦慮，提升心理健康。此外，音樂與美食的結合可增進食慾，帶來更多生活樂趣。「銀齡樂廚」將設立社區共享廚房，讓長者能在此烹飪、交流、合唱，促進社交互動，強化社區凝聚力。但是，許多高齡者可能因行動不便或對數位工具不熟悉而難以參與，因此計畫將透過...
+        </div>
+
+        <!-- Image on the right side -->
+        <div class="image-side">
+            <img src="https://www.sinyicharity.org.tw/_next/image?url=https%3A%2F%2Fres.sinyicharity.org.tw%2F6a312823-782f-43d0-a01c-a7b2769af69a.jpeg&w=1920&q=75" alt="銀齡樂廚計畫">
         </div>
     </div>
 </body>
