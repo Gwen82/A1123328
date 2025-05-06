@@ -25,7 +25,7 @@
             border-bottom: 2px solid #ccc;
             font-size: 18px;
             text-align: center;
-            background-color: #fff; /* White background */
+            background-color: rgba(255, 253, 208, 1); /* Cream color */
         }
 
         /* Flex container for charts */
@@ -42,7 +42,7 @@
         .container {
             flex: 1;
             text-align: center;
-            background-color: #fff; /* White background for simplicity */
+            background-color: rgba(221, 160, 221, 0.75); /* Pastel purple with 75% brightness */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
             border-radius: 5px;
             overflow: hidden;
@@ -52,7 +52,8 @@
             margin: 0;
             padding: 10px;
             font-size: 16px;
-            background-color: #f0f0f0; /* Light gray for contrast */
+            background-color: rgba(186, 140, 186, 0.75); /* Pastel purple for the title */
+            color: #333; /* Text color */
         }
 
         iframe {
@@ -61,10 +62,9 @@
             border: none;
         }
 
-        /* Minimalist info box */
+        /* Info box styling */
         .info-box {
             display: flex;
-            flex-direction: column;
             gap: 20px;
             margin: 0 20px 30px;
             padding: 20px;
@@ -74,20 +74,25 @@
         }
 
         .info-box .text-side {
+            flex: 2; /* Text box on the left side */
             font-size: 14px;
             line-height: 1.6;
             text-align: justify; /* Better readability */
         }
 
         .info-box .image-side {
+            flex: 1; /* Image box on the right side */
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: rgba(255, 253, 208, 0.8); /* Cream color with 80% brightness */
+            padding: 10px;
+            border-radius: 5px;
         }
 
         .info-box .image-side img {
             max-width: 100%;
-            max-height: 200px; /* Smaller image size */
+            max-height: 200px;
             border-radius: 5px;
         }
     </style>
@@ -114,11 +119,5 @@
     <!-- Info Box Below -->
     <div class="info-box">
         <div class="text-side">
-            隨著高齡化社會的發展，高齡友善城市的建設應涵蓋健康、社交與生活品質等面向。我家鄉的數據顯示，許多高齡者面臨營養不均、孤獨感與社交機會減少的挑戰，因此我提出「銀齡樂廚」計畫，結合音樂與共煮共食，提升高齡者的身心健康，打造健康、快樂且充滿歸屬感的晚年生活。計畫將邀請營養師設計高齡友善菜單，確保長者獲得均衡飲食，並在烹飪與用餐過程中播放懷舊音樂，以喚起回憶、減輕焦慮，提升心理健康。此外，音樂與美食的結合可增進食慾，帶來更多生活樂趣。「銀齡樂廚」將設立社區共享廚房，讓長者能在此烹飪、交流、合唱，促進社交互動，強化社區凝聚力。
-        </div>
-        <div class="image-side">
-            <img src="https://www.sinyicharity.org.tw/_next/image?url=https%3A%2F%2Fres.sinyicharity.org.tw%2F6a312823-782f-43d0-a01c-a7b2769af69a.jpeg&w=1920&q=75" alt="銀齡樂廚計畫">
-        </div>
-    </div>
-</body>
-</html>
+            隨著高齡化社會的發展，高齡友善城市的建設應涵蓋健康、社交與生活品質等面向。我家鄉的數據顯示，許多高齡者面臨營養不均、孤獨感與社交機會減少的挑戰，因此我提出「銀齡樂廚」計畫，結合音樂與共煮共食，提升高齡者的身心健康，打造健康、快樂且充滿歸屬感的晚年生活。計畫將邀請營養師設計高齡友善菜單，確保長者獲得均衡飲食，並在烹飪與用餐過程中播放懷舊音樂，以喚起回憶、減輕焦慮，提升心理健康。此外，音樂與美食的結合可增進食慾，帶來更多生活樂趣。「銀齡樂*
+
