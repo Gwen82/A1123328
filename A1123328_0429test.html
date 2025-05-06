@@ -5,9 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age Group Charts</title>
     <style>
-        /* Styling for the container boxes */
-        .container {
+        /* Styling for the textbox */
+        #titleTextBox {
+            background-color: #FFFDD0; /* Cream color */
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        /* Styling for the container holding both boxes */
+        .container-wrapper {
+            display: flex;
+            gap: 20px; /* Space between the two containers */
+            justify-content: center;
+            align-items: flex-start;
             margin-bottom: 30px;
+        }
+
+        /* Styling for the individual container boxes */
+        .container {
+            flex: 1; /* Allow both containers to take up equal space */
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -21,33 +42,31 @@
             text-align: center;
         }
 
-        /* Styling for the textbox */
-        #titleTextBox {
-            background-color: #FFFDD0; /* Cream color */
+        /* Ensure iframe is responsive */
+        iframe {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 18px;
-            text-align: center;
+            height: 600px;
+            border: none;
         }
     </style>
 </head>
 <body>
     <!-- Title Textbox -->
-    <input type="桃園65嵗以上的人口" id="titleTextBox" value="Age Group Data Visualizations" readonly>
+    <input type="text" id="titleTextBox" value="桃園65嵗以上的人口" readonly>
 
-    <!-- Box for 80-100嵗 -->
-    <div class="container">
-        <h2>80-100嵗</h2>
-        <iframe src="https://plotdb.io/v/chart/37432" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
-    </div>
+    <!-- Wrapper for the two containers -->
+    <div class="container-wrapper">
+        <!-- Box for 69-79嵗 -->
+        <div class="container">
+            <h2>69-79嵗</h2>
+            <iframe src="https://plotdb.io/v/chart/37432" allowfullscreen="true"></iframe>
+        </div>
 
-    <!-- Box for 69-79嵗 -->
-    <div class="container">
-        <h2>69-79嵗</h2>
-        <iframe src="https://plotdb.io/v/chart/37432" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
+        <!-- Box for 80-100嵗 -->
+        <div class="container">
+            <h2>80-100嵗</h2>
+            <iframe src="https://plotdb.io/v/chart/37432" allowfullscreen="true"></iframe>
+        </div>
     </div>
 </body>
 </html>
