@@ -24,10 +24,11 @@
         .styled-hr {
             border: 0;
             height: 3px;
-            width: 80px;
+            /* Remove fixed width */
             background: linear-gradient(90deg, #8EC6C5, #F6E6F7, #8EC6C5);
             margin: 16px auto 0 auto;
             border-radius: 2px;
+            transition: width 0.3s;
         }
         .frame-container {
             background: #FFF8E7;
@@ -39,8 +40,8 @@
     </style>
 </head>
 <body>
-    <h1>期末個人報告</h1>
-    <hr class="styled-hr">
+    <h1 id="main-title">期末個人報告</h1>
+    <hr class="styled-hr" id="dynamic-hr">
     <div class="frame-container">
         <iframe 
             title="0603_RAIN" 
@@ -51,5 +52,18 @@
             allowfullscreen="true">
         </iframe>
     </div>
+    <script>
+        function adjustHrWidth() {
+            const title = document.getElementById('main-title');
+            const hr = document.getElementById('dynamic-hr');
+            if (title && hr) {
+                // Get computed width of the title
+                const titleWidth = title.offsetWidth;
+                hr.style.width = titleWidth + 'px';
+            }
+        }
+        window.addEventListener('DOMContentLoaded', adjustHrWidth);
+        window.addEventListener('resize', adjustHrWidth);
+    </script>
 </body>
 </html>
