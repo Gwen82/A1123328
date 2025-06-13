@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>期末個人報告</title>
+    <meta name="viewport" content="width=600, initial-scale=1">
+    <style>
+        body {
+            background: #F6E6F7;
+            color: #5C5470;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            margin-top: 40px;
+            color: #8EC6C5;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+        .frame-container {
+            background: #FFF8E7;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px #d8d0e6;
+            padding: 24px;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>0603_RAIN Dashboard</h1>
+    <div class="frame-container">
+        <iframe 
+            title="0603_RAIN" 
+            width="600" 
+            height="373.5" 
+            src="https://app.powerbi.com/view?r=eyJrIjoiMTBmMTg2NGYtMDhiNi00ODhkLTg2YjktNDAxY2NjOGQxNGU3IiwidCI6IjVhNDg0OTUzLTc3ZWYtNDJlYy05MGNmLTJmNGUxMDM3ZmZjNyIsImMiOjEwfQ%3D%3D" 
+            frameborder="0" 
+            allowfullscreen="true">
+        </iframe>
+    </div>
+</body>
+</html>
